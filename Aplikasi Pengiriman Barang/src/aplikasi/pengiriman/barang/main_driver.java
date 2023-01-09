@@ -20,12 +20,13 @@ public class main_driver {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
-            }
+            } // mengatur tampilan ui menggunakan look and feel nimbus 
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(RegstrasiLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
+        } //menampilkan kesalahan di log
         java.awt.EventQueue.invokeLater(() -> {
             new RegstrasiLogin().setVisible(true);
+            //menampilkaan tampilan registrasi login 
         });
     }
     

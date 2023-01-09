@@ -127,6 +127,11 @@ public class menuAdmin extends javax.swing.JFrame implements ActionListener{
         hapus.setText("Hapus Barang");
 
         edit.setText("Edit Barang");
+        edit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                editActionPerformed(evt);
+            }
+        });
 
         comboKurir.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
@@ -269,6 +274,10 @@ public class menuAdmin extends javax.swing.JFrame implements ActionListener{
         tgl_pemesanan.setText(String.valueOf(barang.getTgl_pemesanan()));
         hapus.addActionListener(this);
     }//GEN-LAST:event_listBarangMouseClicked
+
+    private void editActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_editActionPerformed
 
     /**
      * @param args the command line arguments

@@ -10,7 +10,7 @@ public class Admin extends UserLogin{
         super(username, password);
         listPengirim = new ArrayList<>();
         listKurir = new ArrayList<>();
-    }
+    }//konstruktor mengambil 2 parameter username dan password, menginisialisasi listpengirim dan listkurir
 
     @Override
     public boolean isLogin() {
@@ -19,7 +19,7 @@ public class Admin extends UserLogin{
         } else {
             return false;
         }
-    }
+    }//implementasi dari method abstrak isLogin di userlogin
 
     public void setListPengirim(ArrayList<Pengirim> listPengirim) {
         this.listPengirim = listPengirim;
